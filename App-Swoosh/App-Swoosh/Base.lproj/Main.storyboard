@@ -23,45 +23,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="LTL-Uu-i7V">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="LTL-Uu-i7V">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="KRD-gP-pwo">
-                                <rect key="frame" x="124" y="25" width="126" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="KRD-gP-pwo">
+                                <rect key="frame" x="127.5" y="40" width="119" height="20"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcX-Yl-kJm">
-                                <rect key="frame" x="60" y="147" width="255" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcX-Yl-kJm">
+                                <rect key="frame" x="57" y="145" width="260" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="Idn-Vh-BU1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="40"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avY-yD-FOE">
-                                <rect key="frame" x="92" y="189" width="190" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRn-xr-4Ne">
-                                <rect key="frame" x="56" y="241" width="262" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgq-qT-DTd" customClass="BorderButton" customModule="App_Swoosh" customModuleProvider="target">
-                                <rect key="frame" x="22" y="601" width="331" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgq-qT-DTd" customClass="BorderButton" customModule="App_Swoosh" customModuleProvider="target">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.3045537243150685" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avY-yD-FOE">
+                                <rect key="frame" x="57" y="200" width="260" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0q0-0P-UC8">
+                                <rect key="frame" x="57" y="242.5" width="260" height="38.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="avY-yD-FOE" firstAttribute="width" secondItem="EcX-Yl-kJm" secondAttribute="width" id="3Et-cd-Pe7"/>
+                            <constraint firstItem="KRD-gP-pwo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CQG-5q-NUp"/>
+                            <constraint firstItem="LTL-Uu-i7V" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EZ7-Fn-afC"/>
+                            <constraint firstItem="avY-yD-FOE" firstAttribute="top" secondItem="EcX-Yl-kJm" secondAttribute="bottom" id="G8j-i0-WgM"/>
+                            <constraint firstItem="KRD-gP-pwo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Hmj-Xq-bK8"/>
+                            <constraint firstItem="0q0-0P-UC8" firstAttribute="width" secondItem="avY-yD-FOE" secondAttribute="width" id="Kal-l2-hqZ"/>
+                            <constraint firstItem="LTL-Uu-i7V" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="M4z-b6-3EL"/>
+                            <constraint firstItem="EcX-Yl-kJm" firstAttribute="centerX" secondItem="KRD-gP-pwo" secondAttribute="centerX" id="SE3-nu-GgS"/>
+                            <constraint firstItem="LTL-Uu-i7V" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SuT-Yf-Zyb"/>
+                            <constraint firstItem="0q0-0P-UC8" firstAttribute="top" secondItem="avY-yD-FOE" secondAttribute="bottom" constant="15" id="W7N-Oa-avH"/>
+                            <constraint firstItem="EcX-Yl-kJm" firstAttribute="top" secondItem="KRD-gP-pwo" secondAttribute="bottom" constant="85" id="XPW-br-jWP"/>
+                            <constraint firstItem="Kgq-qT-DTd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fcP-Sk-9Qb"/>
+                            <constraint firstItem="avY-yD-FOE" firstAttribute="centerX" secondItem="EcX-Yl-kJm" secondAttribute="centerX" id="mPW-UV-X0Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kgq-qT-DTd" secondAttribute="trailing" constant="16" id="pFu-7B-EE3"/>
+                            <constraint firstItem="LTL-Uu-i7V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sRt-9m-keS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kgq-qT-DTd" secondAttribute="bottom" constant="20" id="tlU-9u-bL3"/>
+                            <constraint firstItem="0q0-0P-UC8" firstAttribute="centerX" secondItem="avY-yD-FOE" secondAttribute="centerX" id="zkC-Im-vc7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
