@@ -47,6 +47,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="o7K-CM-9Ga" kind="show" id="ofY-dE-MRj"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avY-yD-FOE">
                                 <rect key="frame" x="57" y="200" width="260" height="27.5"/>
@@ -99,6 +102,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="KiW-9A-QS9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yco-9f-TSY" customClass="BorderButton" customModule="App_Swoosh" customModuleProvider="target">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30455372429999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NjU-by-8gx"/>
+                                </constraints>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="N7M-eP-jna">
                                 <rect key="frame" x="16" y="40" width="343" height="50"/>
                                 <subviews>
@@ -152,22 +165,25 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yco-9f-TSY" customClass="BorderButton" customModule="App_Swoosh" customModuleProvider="target">
-                                <rect key="frame" x="16" y="597" width="343" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30455372429999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zey-ll-fLN">
+                                <rect key="frame" x="16" y="10" width="29" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="NjU-by-8gx"/>
+                                    <constraint firstAttribute="width" constant="29" id="uQi-7Y-s2U"/>
+                                    <constraint firstAttribute="height" constant="24" id="yZn-HL-TEJ"/>
                                 </constraints>
-                                <state key="normal" title="NEXT">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="mks-Hp-lej" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="UWa-z3-Rwi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KiW-9A-QS9" firstAttribute="leading" secondItem="zJE-Dj-Z3i" secondAttribute="leading" id="23d-o6-Xpz"/>
+                            <constraint firstItem="Zey-ll-fLN" firstAttribute="leading" secondItem="zJE-Dj-Z3i" secondAttribute="leading" constant="16" id="33f-Ce-fSq"/>
                             <constraint firstItem="KiW-9A-QS9" firstAttribute="top" secondItem="qys-h8-9A6" secondAttribute="top" id="GMo-LN-MJc"/>
                             <constraint firstItem="zJE-Dj-Z3i" firstAttribute="bottom" secondItem="yco-9f-TSY" secondAttribute="bottom" constant="20" id="KVj-iy-uvW"/>
+                            <constraint firstItem="Zey-ll-fLN" firstAttribute="top" secondItem="qys-h8-9A6" secondAttribute="top" constant="10" id="Lya-Jk-Rcx"/>
                             <constraint firstItem="N7M-eP-jna" firstAttribute="top" secondItem="zJE-Dj-Z3i" secondAttribute="top" constant="20" id="MY0-le-zs3"/>
                             <constraint firstItem="KiW-9A-QS9" firstAttribute="bottom" secondItem="zJE-Dj-Z3i" secondAttribute="bottom" id="QL7-Gf-bjZ"/>
                             <constraint firstItem="KiW-9A-QS9" firstAttribute="trailing" secondItem="zJE-Dj-Z3i" secondAttribute="trailing" id="fxo-HH-axa"/>
@@ -183,8 +199,9 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vzy-Mn-rvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="mks-Hp-lej" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="826.39999999999998" y="133.5832083958021"/>
+            <point key="canvasLocation" x="902" y="134"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PX1-zy-JZ7">
@@ -272,10 +289,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="781-9o-xcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1498.4000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1646" y="134"/>
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
